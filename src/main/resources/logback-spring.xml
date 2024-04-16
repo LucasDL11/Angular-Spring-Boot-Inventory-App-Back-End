@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Logback Configuration -->
+<configuration>
+
+    <!-- STDOUT Appender -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- Encoder Configuration -->
+        <encoder>
+            <!-- Log Pattern -->
+            <pattern>[%thread] %-5level: %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root Logger Configuration -->
+    <root level="info">
+        <!-- Reference to STDOUT Appender -->
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>
